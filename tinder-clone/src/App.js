@@ -9,7 +9,7 @@ function App() {
     
     <Header />
     <TinderCards />
-    {/* SwipeButtons */}
+    {/* <SwipeButtons /> */}
 
     </div>
   );
