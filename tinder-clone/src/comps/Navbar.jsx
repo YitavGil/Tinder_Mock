@@ -15,7 +15,7 @@ const Navbar = ({ setShowModal, showModal, setIsSignUp}) => {
           <h1><FaFistRaised />Fight Club</h1>
           </div>
             
-            {!authToken && <button 
+            {authToken && <button 
             className='nav-btn'
             onClick={handleClick}
             disabled={showModal}
