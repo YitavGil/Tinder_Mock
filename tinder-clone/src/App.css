@@ -155,12 +155,17 @@ nav .nav-btn:disabled{
     font-size: 15px;
     border: 2px solid gray;
     border-radius: 10px;
+    text-align: start;
 }
 
 .onboarding form input::-webkit-outer-spin-button,
 .onboarding form input::-webkit-inner-spin-button{
     -webkit-appearance: none;
     margin:0;
+}
+
+.onboarding form label{
+    margin: 10px 0
 }
 
 .onboarding form .multiple-input-container {
@@ -176,6 +181,27 @@ nav .nav-btn:disabled{
     padding: 10px;
     border: 2px solid #e77e1b;
     border-radius: 10px;
-    transition: all 0.3s;
+    /* transition: all 0.3s; */
     margin-right: 10px;
+}
+
+.onboarding form input[type="radio"]{
+    display: none;
+}
+
+.onboarding form input[type="number"]{
+   width: 15%;
+}
+
+.onboarding form input[type="radio"]:checked + label {
+    border: 3px solid #800909;
+} 
+
+.onboarding form input[type="submit"]:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+.onboarding form input[type="submit"]:active {
+    background-color: #be1111;
+    color: white;
 }
