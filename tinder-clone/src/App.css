@@ -136,6 +136,10 @@ nav .nav-btn:disabled{
 
 /* ========== Boarding Page ========== */
 
+.onboarding{
+    border-top: 1px solid gray;
+}
+
 .onboarding form {
     display: flex;
     justify-content: center;
@@ -165,7 +169,8 @@ nav .nav-btn:disabled{
 }
 
 .onboarding form label{
-    margin: 10px 0
+    margin: 10px 0;
+    text-align: start;
 }
 
 .onboarding form .multiple-input-container {
@@ -197,11 +202,134 @@ nav .nav-btn:disabled{
     border: 3px solid #800909;
 } 
 
+.onboarding form input[type="submit"] {
+    text-align: center;
+    cursor: pointer;
+}
+
 .onboarding form input[type="submit"]:hover {
     background-color: rgb(235, 235, 235);
+    
 }
 
 .onboarding form input[type="submit"]:active {
     background-color: #be1111;
     color: white;
+}
+
+.onboarding form .photo-container img {
+    width: 100%;
+
+}
+
+/* ========== Dashboard ========== */
+
+.dashboard {
+    display: flex;
+    justify-content: space-around;
+}
+
+.dashboard .swipe-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.swipe {
+    position: absolute;
+  }
+  
+  .dashboard .card-container {
+    width: 400px;
+    height: 650px;
+  }
+  
+  .card {
+    width: 400px;
+    height: 650px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #800909;
+  }
+  
+  
+  .card h3 {
+    position: absolute;
+    bottom: 0;
+    margin: 10px;
+    color: black;
+  }
+  
+  .dashboard .swipe-info {
+      position: absolute;
+      bottom: 0;
+      padding: 10px;
+  }
+
+  /* ========== Chat Container ========== */
+
+  .chat-container {
+      background-color: white;
+      box-shadow: rgb(0, 0, 0, 0.05) 0px 6px 24px 0px ,
+      rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+      width: 30%;
+      text-align: left;
+      z-index: 1;
+  }
+
+  .chat-container .chat-container-header {
+      background: linear-gradient(45deg,#800909, #fb8a20);
+      height: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .chat-container .option {
+      border: none;
+      background-color: white;
+      border-bottom:4px solid  #e77e1b;
+      font-size: 20px;
+      margin: 2px;
+      padding: 10px;
+  }
+
+  .chat-container .option:disabled{
+      border-bottom: 4px solid  gray;
+  }
+
+  .chat-container .profile {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+  }
+
+  .img-container {
+      height: 30px;
+      width: 30px;
+      border-radius: 15px;
+      overflow: hidden;
+      margin: 10px;
+  }
+  
+  .img-container img{
+      width: 100%;
+  }
+
+  /* ========== Chat Display ========== */
+
+.chat-display {
+    padding: 20px;
+    height: 60vh;
+    overflow-y: auto;
+}
+/* ========== Chat Input ========== */
+.chat-input {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
 }

@@ -8,7 +8,7 @@ const Navbar = ({ setShowModal, showModal, setIsSignUp}) => {
     setIsSignUp(false)
   }
 
-    const authToken = true;
+    const authToken = false;
   return (
       <nav>
         <div className='logo-container'>

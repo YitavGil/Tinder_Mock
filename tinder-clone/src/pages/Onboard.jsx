@@ -122,38 +122,38 @@ const Onboard = () => {
                 type='checkbox'
                 name='show_gender'  
                 onChange={handleChange}
-                checked={false}
+                checked={formData.show_gender}
               />
 
             <label>Show me</label>
             <div className='multiple-input-container'>
               <input 
                   id='man-gender-interest'
-                  type='checkbox'
+                  type='radio'
                   name='gender_interest'
                   value='man'  
                   onChange={handleChange}
-                  checked={false}
+                  checked={formData.gender_interest === 'man'}
                 />
                 <label htmlFor='man-gender-interest'>Man</label>
               <input 
                   id='woman-gender-interest'
-                  type='checkbox'
+                  type='radio'
                   name='gender_interest' 
                   value='woman' 
                   onChange={handleChange}
-                  checked={false}
+                  checked={formData.gender_interest === 'woman'}
                 />
                  <label htmlFor='woman-gender-interest'>Woman</label>
               <input 
                   id='everyone-gender-interest'
-                  type='checkbox'
+                  type='radio'
                   name='gender_interest' 
                   value='everyone' 
                   onChange={handleChange}
-                  checked={false}
+                  checked={formData.gender_interest === 'everyone'}
                 />
-                <label htmlFor='more-gender-interest'>Everyone</label>
+                <label htmlFor='everyone-gender-interest'>Everyone</label>
                </div>
 
                <label htmlFor='about'>About me</label>
